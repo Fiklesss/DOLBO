@@ -9,44 +9,23 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background: linear-gradient(to top, #000000, #444444);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .iframe-wrapper {
-      transform: scale(1.4); /* увеличивает размер */
-      transform-origin: top left;
+      width: 100%;
+      background: linear-gradient(to top, #000000, #444444); /* чёрный снизу, серый сверху */
     }
 
     iframe {
-      width: 370px;
-      height: 800px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    @media (max-width: 480px) {
-      .iframe-wrapper {
-        transform: none;
-      }
-
-      iframe {
-        width: 100vw;
-        height: 100vh;
-        border-radius: 0;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="iframe-wrapper">
-    <iframe allowfullscreen="true"
-      src="https://band.link/dolborecords/iframe?youtube_enabled=1&header=0&title=1&theme=light&player_enabled=undefined&picture=1&footer=1"
-    ></iframe>
-  </div>
+  <iframe allowfullscreen="true"
+    src="https://band.link/dolborecords/iframe?youtube_enabled=1&header=0&title=1&theme=light&player_enabled=undefined&picture=1&footer=1"
+  ></iframe>
 </body>
 </html>
